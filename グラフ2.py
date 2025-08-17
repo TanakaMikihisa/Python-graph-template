@@ -197,6 +197,10 @@ ax.set_yscale('log' if AXIS_LOG['y'] else 'linear')
 ax.set_xlabel(X_LABEL)
 ax.set_ylabel(Y_LABEL)
 
+# y軸の範囲は元のまま
+#ax.set_xlim(0, 10000000)
+#plt.xticks(np.arange(0, 1.6 , 0.1 ))  # 0から50まで10刻み
+
 # グラフの体裁設定
 ax.grid(SHOW_GRID)
 ax.tick_params(axis='both', which='both', top=True, right=True, direction='in')
